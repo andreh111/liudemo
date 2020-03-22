@@ -1,0 +1,15 @@
+<h1>My Tasks</h1>
+<table class="table table-tasks">
+  <thead>
+    <tr>
+      <th class="text-center">Task ID</th>
+      <th class="text-center">Task Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks | slice:0:10">
+      <th class="text-center">{{task.id}}</th>
+      <th class="text-center">{{task.title}}</th>
+    </tr>
+  </tbody>
+</table>
