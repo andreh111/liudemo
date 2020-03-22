@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     if (this.username === '' && this.password === '') {
       alert('Please Enter a username and a password');
     } else if (this.username === 'eddy' && this.password === '1234') {
-      this.route.navigate(['dashboard']);
+      this.route.navigate(['dashboard', {user: this.username, profile: 'https://www.eddyghabach.com/images/eddy-sm.jpg'}]);
     }
   }
 
